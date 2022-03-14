@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery/jquery.js"></script>
+    <link rel="stylesheet" href="css/styleTateti.css">
+    <title>JUEGO</title>
+</head>
+<body onload="inicio()">
+    <div id="wrapper">
+        <a href="./index.html" ><button id="nexo-juegos">❮❮❮ Volver al INICIO</button></a>
+        <h1>TaTeTi</h1>
+        <div id="divUrl"><label>Aqui el link para jugar con gente!<input id="inpUrl" type="text" value="..."readonly ></label>
+        
+        </div>
+        <table id="tablero">
+            <tr id="arriba">
+                <td class="left top" id="p00" onclick="enviar(id)"></td>
+                <td class="top" id="p01" onclick="enviar(id)"></td>
+                <td class="right top" id="p02" onclick="enviar(id)"></td>
+            </tr>
+            <tr id="medio">
+                <td class="left" id="p10" onclick="enviar(id)"></td>
+                <td id="p11" onclick="enviar(id)"></td>
+                <td class="right" id="p12" onclick="enviar(id)"></td>
+            </tr>
+            <tr id="abajo">
+                <td class="left down" id="p20" onclick="enviar(id)"></td>
+                <td class="down" id="p21" onclick="enviar(id)"></td>
+                <td class="down right" id="p22" onclick="enviar(id)"></td>
+            </tr>
+        </table>
+        <p id="trn">Turno: X</p>
+        
+    </div>
+    <script src="tateti.js"></script>
+</body>
+</html>
